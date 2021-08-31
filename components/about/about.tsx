@@ -17,7 +17,7 @@ const About: NextPage = () => {
           </div>
           <AboutGrid>
             <div className="line"></div>
-            <AboutCard>
+            <AboutCard top="0">
               <div className="icon">
                 <IconImg
                   src="/images/icon-brand-recognition.svg"
@@ -31,7 +31,7 @@ const About: NextPage = () => {
                 content.
               </p>
             </AboutCard>
-            <AboutCard>
+            <AboutCard top="40">
               <div className="icon">
                 <IconImg
                   src="/images/icon-detailed-records.svg"
@@ -45,7 +45,7 @@ const About: NextPage = () => {
                 decisions.
               </p>
             </AboutCard>
-            <AboutCard>
+            <AboutCard top="80">
               <div className="icon">
                 <IconImg
                   src="/images/icon-fully-customizable.svg"

@@ -10,7 +10,9 @@ export const GlobalStyles = createGlobalStyle`
         --desktop-body1SBold: 500  1.375rem / 2.25rem var(--baseFont);
         --desktop-headLineTwoBold: bold 2.5rem / 3rem var(--baseFont);
         --soft-gray: #eff1f7;
+        --dark-gray: #9e9aa8;
         --just-white:#fff;
+        --just-dark: #34313d;
         --dark-purple: #3a3054;
         --just-cyan: #2bd0d0;
         --bg-footer: #232127;
@@ -22,6 +24,7 @@ export const GlobalStyles = createGlobalStyle`
         outline: 1px solid green;
         min-block-size: 100vh;
         font-family: var(--baseFont);
+        color: var(--dark-gray);
         /* background-color: blue; */
     } 
     ul,a,p,h1 {

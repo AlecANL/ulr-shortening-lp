@@ -10,6 +10,7 @@ export const HeroStyled = styled.section`
   }
   h1 {
     font: var(--mobile-mainHeadlineBold);
+    color: var(--just-dark);
   }
   p {
     font: var(--mobile-body1SBold);

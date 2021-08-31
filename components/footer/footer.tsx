@@ -6,7 +6,7 @@ const Footer: NextPage = () => {
   return (
     <FooterStyled>
       <div className="wrapper">
-        <div className="footer-content">
+        <div className="footer__content">
           <FooterImg src="/images/logo.svg" alt="logo shortly" />
           <FooterNavigation>
             <nav aria-label="features navigation">
