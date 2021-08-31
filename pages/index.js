@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 import Hero from '../components/hero/hero';
 import About from '../components/about/about';
+import Footer from '../components/footer/footer';
+import Headline from '../components/headline/headline';
 
 export default function Home() {
   return (
@@ -14,6 +14,8 @@ export default function Home() {
       </Head>
       <Hero />
       <About />
+      <Headline />
+      <Footer />
     </>
   );
 }

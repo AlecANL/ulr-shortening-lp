@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import { AboutStyled, AboutGrid, AboutCard } from './about.styled';
+import { AboutStyled, AboutGrid, AboutCard, IconImg } from './about.styled';
 import Form from '../form/form';
 
 const About: NextPage = () => {
@@ -16,7 +16,14 @@ const About: NextPage = () => {
             </p>
           </div>
           <AboutGrid>
+            <div className="line"></div>
             <AboutCard>
+              <div className="icon">
+                <IconImg
+                  src="/images/icon-brand-recognition.svg"
+                  alt="icon brand"
+                />
+              </div>
               <h3>brand recognition</h3>
               <p>
                 Boost your brand recognition with each click. Generic links
@@ -25,6 +32,12 @@ const About: NextPage = () => {
               </p>
             </AboutCard>
             <AboutCard>
+              <div className="icon">
+                <IconImg
+                  src="/images/icon-detailed-records.svg"
+                  alt="icon brand"
+                />
+              </div>
               <h3>detailed records</h3>
               <p>
                 Gain insights into who is clicking your links. Knowing when and
@@ -33,6 +46,12 @@ const About: NextPage = () => {
               </p>
             </AboutCard>
             <AboutCard>
+              <div className="icon">
+                <IconImg
+                  src="/images/icon-fully-customizable.svg"
+                  alt="icon brand"
+                />
+              </div>
               <h3>fully customizable</h3>
               <p>
                 Improve brand awareness and content discoverability through
