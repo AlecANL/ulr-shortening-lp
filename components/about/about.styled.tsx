@@ -7,7 +7,7 @@ export interface ITop {
 export const AboutStyled = styled.main`
   background-color: var(--soft-gray);
   padding-inline: 1.5rem;
-  padding-block: 5rem;
+  /* padding-block: 5rem; */
   /* padding-block-start: 10rem; */
   .about-content {
     text-align: center;
@@ -43,8 +43,14 @@ export const AboutStyled = styled.main`
     transform: translateX(-50%);
     inset-block-start: 3.8rem;
   }
+  .custom-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-block-end: 7.5rem;
+  }
   @media screen and (min-width: 768px) {
-    padding-block: 7.5rem;
+    padding-block-start: 0;
     padding-block-end: 13rem;
     .icon {
       inset-inline-start: 4.375rem;
@@ -86,5 +92,6 @@ export const AboutCard = styled.article<ITop>`
   z-index: 100;
   @media screen and (min-width: 768px) {
     inset-block-start: ${({ top }) => `${top}px`};
+    text-align: start;
   }
 `;

@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import { AboutStyled, AboutGrid, AboutCard, IconImg } from './about.styled';
 import Form from '../form/form';
+import CustomLink from '../custom-link/custom-link';
 
 const About: NextPage = () => {
   return (
@@ -8,6 +9,11 @@ const About: NextPage = () => {
       <div className="wrapper">
         <div className="about-content">
           <Form />
+          <div className="custom-links">
+            <CustomLink />
+            <CustomLink />
+            <CustomLink />
+          </div>
           <div className="about-description">
             <h2>advanced statics</h2>
             <p>

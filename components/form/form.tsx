@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import { FormStyled } from './form.styled';
+import Button from '../button/button';
 
 const Form: NextPage = () => {
   return (
@@ -10,7 +11,7 @@ const Form: NextPage = () => {
         placeholder="Shorten a link here..."
         aria-label="put valid url"
       />
-      <button>shorten it!</button>
+      <Button>shorten it!</Button>
     </FormStyled>
   );
 };

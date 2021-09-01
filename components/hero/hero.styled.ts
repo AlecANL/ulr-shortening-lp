@@ -14,6 +14,7 @@ export const HeroStyled = styled.section`
   }
   p {
     font: var(--mobile-body1SBold);
+    margin-block-end: 2rem;
   }
   @media screen and (min-width: 1024px) {
     padding-block: 140px;
@@ -31,6 +32,7 @@ export const HeroStyled = styled.section`
     }
     p {
       font: var(--desktop-body1SBold);
+      margin-block-end: 38px;
     }
   }
 `;

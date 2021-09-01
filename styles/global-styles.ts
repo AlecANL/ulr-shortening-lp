@@ -2,13 +2,17 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
     :root{
-        --baseFont: system-ui;
+        --baseFont: 'Poppins', sans-serif;;
         --mobile-mainHeadlineBold: bold 2.625rem / 3rem var(--baseFont);
         --mobile-headLineTwoBold: bold 1.75rem / 3rem var(--baseFont);
         --mobile-body1SBold: 500  1.125rem / 1.875rem var(--baseFont);
+        --mobile-smallBold: 500 1rem / 2.25rem var(--baseFont);
+         --mobile-buttonBold: bold 1.25rem / 1.875rem var(--baseFont);
         --desktop-mainHeadlineBold: bold 5rem / 5.625rem var(--baseFont);
         --desktop-body1SBold: 500  1.375rem / 2.25rem var(--baseFont);
         --desktop-headLineTwoBold: bold 2.5rem / 3rem var(--baseFont);
+        --mobile-smallBold: 500 1.25rem / 2.25rem var(--baseFont);
+
         --soft-gray: #eff1f7;
         --dark-gray: #9e9aa8;
         --just-white:#fff;

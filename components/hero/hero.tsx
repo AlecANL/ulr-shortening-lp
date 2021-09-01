@@ -1,4 +1,6 @@
 import { NextPage } from 'next';
+import Button from '../button/button';
+
 import {
   HeroCover,
   HeroCoverImg,
@@ -23,7 +25,7 @@ const Hero: NextPage = () => {
               Build your brands recognition and get detailed insights on how
               your links are performing
             </p>
-            <button>get started</button>
+            <Button>get started</Button>
           </HeroDescription>
         </div>
       </div>
