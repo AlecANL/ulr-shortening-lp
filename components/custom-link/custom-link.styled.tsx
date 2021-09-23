@@ -30,6 +30,10 @@ export const CustomLinkStyled = styled.div`
     &:hover {
       background-color: #9ae3e3;
     }
+    &.is-copied {
+      background-color: var(--dark-purple);
+      color: var(--just-white);
+    }
   }
 `;
 

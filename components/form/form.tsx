@@ -22,9 +22,12 @@ const Form: NextPage<FormProps> = ({ link, setLink, setLinks }) => {
     try {
       const response = await fetch(`${baseUrl}?url=${link}`);
       const linkShortly: IShortLink = await response.json();
+      console.log(linkShortly);
+
+      setLoading(false);
+      if (!linkShortly.ok) setError(true);
       if (linkShortly.ok) {
         setLinks((state: IResult[]) => [...state, linkShortly.result]);
-        setLoading(false);
       }
     } catch (error) {
       setLoading(true);

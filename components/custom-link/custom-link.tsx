@@ -14,16 +14,16 @@ const CustomLink: NextPage<CustomLinkProps> = ({
   fullLinkShort,
 }) => {
   const linkRef = React.useRef<HTMLAnchorElement | null>(null);
-  const [textButton, setTextButton] = React.useState<string>('copy');
+  const [isCopyBtn, setCopyBtn] = React.useState<boolean>(false);
   function handleCopyLink() {
     const textLink = linkRef.current.href;
     navigator.clipboard
       .writeText(textLink)
       .then(link => link)
       .catch(err => `whoops was happen a error: ${err}`);
-    setTextButton('copied!');
+    setCopyBtn(true);
     setTimeout(() => {
-      setTextButton('copy');
+      setCopyBtn(false);
     }, 1500);
   }
 
@@ -33,7 +33,9 @@ const CustomLink: NextPage<CustomLinkProps> = ({
       <ShortLink ref={linkRef} href={fullLinkShort} target="_blank">
         {linkShort}
       </ShortLink>
-      <button onClick={handleCopyLink}>{textButton}</button>
+      <button className={isCopyBtn && 'is-copied'} onClick={handleCopyLink}>
+        {isCopyBtn ? 'copied!' : 'copy'}
+      </button>
     </CustomLinkStyled>
   );
 };
