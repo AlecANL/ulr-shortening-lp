@@ -2,17 +2,27 @@ import { NextPage } from 'next';
 import { AboutStyled, AboutGrid, AboutCard, IconImg } from './about.styled';
 import Form from '../form/form';
 import CustomLink from '../custom-link/custom-link';
+import React from 'react';
+import { IResult } from '../../types/link.types';
 
 const About: NextPage = () => {
+  const [link, setLink] = React.useState<string>('');
+  const [links, setLinks] = React.useState<IResult[]>([]);
+
   return (
     <AboutStyled>
       <div className="wrapper">
         <div className="about-content">
-          <Form />
+          <Form link={link} setLink={setLink} setLinks={setLinks} />
           <div className="custom-links">
-            <CustomLink />
-            <CustomLink />
-            <CustomLink />
+            {links.map((link, idx) => (
+              <CustomLink
+                link={link.original_link}
+                linkShort={link.short_link}
+                fullLinkShort={link.full_short_link}
+                key={idx}
+              />
+            ))}
           </div>
           <div className="about-description">
             <h2>advanced statics</h2>

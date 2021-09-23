@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
 export const HeaderStyled = styled.header`
+  padding-inline: 1.5rem;
+  padding-block: 1.25rem;
   .buttons {
     display: flex;
     align-items: center;
     text-transform: capitalize;
+    display: none;
   }
   button {
     padding-block: 0.625rem;
@@ -28,6 +31,7 @@ export const HeaderStyled = styled.header`
 export const HeaderLogo = styled.img``;
 
 export const NavStyled = styled.nav`
+  display: none;
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;

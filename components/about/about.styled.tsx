@@ -56,7 +56,8 @@ export const AboutStyled = styled.main`
       inset-inline-start: 4.375rem;
     }
     .line {
-      inline-size: 62.5rem;
+      inline-size: 100%;
+      /* inline-size: 62.5rem; */
       block-size: 0.5rem;
       inset-block-start: 70%;
       /* inset-inline-start: 50%;

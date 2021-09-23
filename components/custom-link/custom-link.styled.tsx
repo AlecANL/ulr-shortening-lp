@@ -19,6 +19,17 @@ export const CustomLinkStyled = styled.div`
     padding-inline: 1.9375rem;
     padding-block: 0.625rem;
     text-transform: capitalize;
+    border-color: transparent;
+    background-color: var(--just-cyan);
+    font: var(--mobile-buttonBold);
+    color: var(--just-white);
+    cursor: pointer;
+    &:active {
+      transform: scale(0.98);
+    }
+    &:hover {
+      background-color: #9ae3e3;
+    }
   }
 `;
 
@@ -31,6 +42,7 @@ export const LinkStyled = styled.span`
     flex: 1;
   }
 `;
-export const ShortLink = styled.span`
+export const ShortLink = styled.a`
   color: var(--just-cyan);
+  text-decoration: none;
 `;
